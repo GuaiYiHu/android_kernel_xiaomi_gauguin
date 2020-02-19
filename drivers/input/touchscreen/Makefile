@@ -117,3 +117,4 @@ obj-$(CONFIG_SPI_XIAOMI_TP) += spi-xiaomi-tp.o
 #obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_TCM)       += synaptics_tcm/
 #obj-$(CONFIG_TOUCHSCREEN_FTS) += focaltech_touch/
 obj-$(CONFIG_TOUCHSCREEN_NT36XXX)	+= nt36xxx/
+obj-$(CONFIG_TOUCHSCREEN_COMMON)	+= tp_common.o
