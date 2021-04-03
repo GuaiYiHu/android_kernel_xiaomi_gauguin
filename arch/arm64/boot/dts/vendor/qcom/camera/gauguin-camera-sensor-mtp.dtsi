@@ -1,5 +1,15 @@
 #include <dt-bindings/clock/qcom,camcc-lagoon.h>
 
+&soc {
+	led_flash_triple_rear: qcom,camera-flash@0 {
+		cell-index = <0>;
+		reg = <0x0 0x00>;
+		compatible = "qcom,camera-flash";
+		flash-source = <&pm6150l_flash0 &pm6150l_flash1>;
+		torch-source = <&pm6150l_torch0 &pm6150l_torch1>;
+		switch-source = <&pm6150l_switch2>;
+	};
+};
 &cam_cci1 {
 	eeprom_ultra: qcom,eeprom@3 {
 		cell-index = <3>;
