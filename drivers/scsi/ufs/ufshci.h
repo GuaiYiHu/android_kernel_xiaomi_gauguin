@@ -3,7 +3,6 @@
  *
  * This code is based on drivers/scsi/ufs/ufshci.h
  * Copyright (C) 2011-2013 Samsung India Software Operations
- * Copyright (C) 2021 XiaoMi, Inc.
  *
  * Authors:
  *	Santosh Yaraganavi <santosh.sy@samsung.com>
@@ -489,8 +488,6 @@ struct ufshcd_sg_entry {
 	 * hba->sg_entry_size != sizeof(struct ufshcd_sg_entry)
 	 */
 };
-
-#define UTRD_CRYPTO_ENABLE     UFS_BIT(23)
 
 /**
  * struct utp_transfer_cmd_desc - UFS Command Descriptor structure
